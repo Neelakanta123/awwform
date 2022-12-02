@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        form {
+            border:1px solid gray;
+            padding: 30px;
+            width: 400px;
+            margin: 10px;
+        }
+        h3{
+             background-color: red ;
+            text-align: center;
+            color: white;
+            
+           
+        }
+        .radio{
+            accent-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+   
+   <form>
+      <h3> Pregnet woman</h3>
+      <div class="mb-3">
+      
+          <label class="form-label" for="Name of pregnet woman">Name of pregnet woman </label>
+          <div>
+            <input type="text" class="form-control" >
+          </div>
+      </div>
+      <div class="mb-3">
+         <label class="form-label" for="Husband name"> Husband name</label>
+           <div>
+            <input type="text" class="form-control">
+           </div>
+      </div>
+      <div class="mb-3">
+         <label class="form-label" for=" Aadhar Number">Aadhar Number </label>
+           <div>
+            <input type="text" class="form-control">
+           </div>
+           <div class="mb-3">
+            <label class="form-label" for=" Mobile number">Mobile number </label>
+              <div>
+               <input type="text" class="form-control" placeholder="+91" >
+              </div>
+              <div class="mb-3">
+               <label class="form-label" for=" date of birthr">date of birth</label>
+                 <div>
+                  <input type="datetime-local" class="form-control">
+                 </div>
+      <div class="mb-3">
+         <label class="form-label" for="City"> Category</label>
+         <div>
+            <select name="City" class="form-select">
+                <option>Select</option>
+                <option> SC</option>
+                <option> ST</option>
+                <option> OBC</option>
+                <option> General</option>
+            </select>
+         </div>
+      </div>
+      <div class="mb-3">
+         is this your first pregnancy?
+             </div>
+             <input type="radio" class="radio" name="yes/no">Yes
+             <input type="radio" class="radio" name="yes/no">No
+              </div>
+
+              <div class="mb-3">
+               Has there been a miscarriage before?
+                   </div>
+                   <input type="radio" class="radio" name="yes/no">Yes
+                   <input type="radio" class="radio" name="yes/no">No
+                    </div>
+
+      
+      
+      
+        <button class="btn btn-danger w-100">Submit</button>
+      </div>
+   </form>
+</body>
+</html>
